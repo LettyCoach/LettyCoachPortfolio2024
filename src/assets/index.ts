@@ -4,7 +4,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
-import menu from "./menu.svg";
+import menu from "./logo.png";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
@@ -15,11 +15,15 @@ import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
+import express from "./tech/express_white.svg";
+import reactjs from "./tech/reactjs.svg";
 import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
+import vuejs from "./tech/vue.svg";
+import nextjs from "./tech/nextjs_white.svg";
+import tailwind from "./tech/tailwind.svg";
+import typescript from "./tech/typescript.svg";
 import threejs from "./tech/threejs.svg";
+import sass_scss from "./tech/sass.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -47,11 +51,15 @@ export {
   javascript,
   mongodb,
   nodejs,
+  express,
   reactjs,
   redux,
+  vuejs,
+  nextjs,
   tailwind,
   typescript,
   threejs,
+  sass_scss,
   meta,
   shopify,
   starbucks,

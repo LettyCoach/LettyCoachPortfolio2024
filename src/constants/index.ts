@@ -17,10 +17,14 @@ import {
   html,
   css,
   reactjs,
+  nextjs,
   redux,
+  vuejs,
   tailwind,
   nodejs,
+  express,
   mongodb,
+  sass_scss,
   git,
   figma,
   docker,
@@ -31,10 +35,13 @@ import {
   carrent,
   jobit,
   tripguide,
-  threejs,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
+  {
+    id: "home",
+    title: "Home",
+  },
   {
     id: "about",
     title: "About",
@@ -44,6 +51,14 @@ export const navLinks: TNavLink[] = [
     title: "Work",
   },
   {
+    id: "skills",
+    title: "Skills",
+  },
+  {
+    id: "project",
+    title: "Project",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -51,76 +66,125 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Web Developer",
+    title: "Fullstack Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Blockchain Developer",
+    icon: creator,
+  },
+  {
+    title: "ChatGPT API Expert",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Infrastructure Manager",
     icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
   },
 ];
 
 const technologies: TTechnology[] = [
   {
-    name: "HTML 5",
+    title: "HTML",
+    hash: "#html",
     icon: html,
+    color: "#F1662A",
   },
   {
-    name: "CSS 3",
+    title: "CSS",
+    hash: "#CSS",
     icon: css,
+    color: "#1572B6",
   },
   {
-    name: "JavaScript",
+    title: "JavaScript",
+    hash: "#JavaScript",
     icon: javascript,
+    color: "#F7DF1E",
   },
   {
-    name: "TypeScript",
+    title: "TypeScript",
+    hash: "#TypeScript",
     icon: typescript,
+    color: "#007ACC",
   },
   {
-    name: "React JS",
+    title: "React",
+    hash: "#React",
     icon: reactjs,
+    color: "#61DAFB",
   },
   {
-    name: "Redux Toolkit",
+    title: "Redux Toolkit",
+    hash: "#Redux",
     icon: redux,
+    color: "#61DAFB",
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    title: "Next.js",
+    hash: "#Next.js",
+    icon: nextjs,
+    color: "#FFFFFF",
   },
   {
-    name: "Node JS",
+    title: "Node.js",
+    hash: "#Node.js",
     icon: nodejs,
+    color: "#339933",
   },
   {
-    name: "MongoDB",
+    title: "Tailwind",
+    hash: "#Tailwind",
+    icon: tailwind,
+    color: "#38B2AC",
+  },
+  {
+    title: "MongoDB",
+    hash: "#MongoDB",
     icon: mongodb,
+    color: "#449C45",
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    title: "Vue.js",
+    hash: "#Vue.js",
+    icon: vuejs,
+    color: "#4FC08D",
   },
   {
-    name: "git",
+    title: "Express",
+    hash: "#Express",
+    icon: express,
+    color: "#FFFFFF",
+  },
+  {
+    title: "SASS/SCSS",
+    hash: "#SASS/SCSS",
+    icon: sass_scss,
+    color: "#CC6699",
+  },
+
+
+  {
+    title: "git",
+    hash: "#git",
     icon: git,
+    color: "#CC6699",
   },
+
   {
-    name: "figma",
+    title: "figma",
+    hash: "#figma",
     icon: figma,
+    color: "#CC6699",
   },
+
   {
-    name: "docker",
+    title: "docker",
+    hash: "#docker",
     icon: docker,
+    color: "#CC6699",
   },
+
 ];
 
 const experiences: TExperience[] = [
@@ -156,6 +220,45 @@ const experiences: TExperience[] = [
     icon: shopify,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Full stack Developer",
+    companyName: "Meta",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    date: "Jan 2023 - Present",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Full stack Developer",
+    companyName: "Meta",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    date: "Jan 2023 - Present",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Full stack Developer",
+    companyName: "Meta",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    date: "Jan 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -246,6 +349,69 @@ const projects: TProject[] = [
       },
     ],
     image: jobit,
+    sourceCodeLink: "https://github.com/",
+  },
+  {
+    name: "Trip Guide",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    sourceCodeLink: "https://github.com/",
+  },
+  {
+    name: "Trip Guide",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    sourceCodeLink: "https://github.com/",
+  },
+  {
+    name: "Trip Guide",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
     sourceCodeLink: "https://github.com/",
   },
   {
