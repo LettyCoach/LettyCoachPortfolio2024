@@ -1,12 +1,13 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
+import { Tooltip as ReactTooltip } from "react-tooltip";
 
 // import { BallCanvas } from '../canvas';
 import { Skill } from '../atoms/Skill';
 import { SectionWrapper } from '../../hoc';
 import { technologies } from '../../constants';
-import { fadeIn } from "../../utils/motion";
-import { config } from "../../constants/config";
-import { Header } from "../atoms/Header";
+import { fadeIn } from '../../utils/motion';
+import { config } from '../../constants/config';
+import { Header } from '../atoms/Header';
 
 const Tech = () => {
   const theme = 'dark';
@@ -50,6 +51,16 @@ const Tech = () => {
           <Skill skill={technology} />
         ))}
       </article>
+
+      <ReactTooltip
+        place="top"
+        id="my-tooltip"
+        style={{
+          fontSize: '1.5rem',
+          zIndex: 10,
+          backgroundColor: 'var(--orange)',
+        }}
+      />
     </>
   );
 };
