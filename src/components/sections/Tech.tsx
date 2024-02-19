@@ -23,9 +23,9 @@ const Tech = () => {
           <div
             className={`absolute top-10 left-1/2 transform -translate-x-1/2 px-4 py-2  rounded-t-xl `}
           >
-            <p className="font-semibold	text-3xl">
+            <p className="font-semibold	text-2xl break-normal">
               <span className="text-[--orange]">&lt;</span>
-              Web Development
+              WebDevelopment
               <span className="text-[--orange]">/&gt;</span>
             </p>
           </div>
