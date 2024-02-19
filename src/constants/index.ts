@@ -17,10 +17,14 @@ import {
   html,
   css,
   reactjs,
+  nextjs,
   redux,
+  vuejs,
   tailwind,
   nodejs,
+  express,
   mongodb,
+  sass_scss,
   git,
   figma,
   docker,
@@ -31,12 +35,11 @@ import {
   carrent,
   jobit,
   tripguide,
-  threejs,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
   {
-    id: "about",
+    id: "home",
     title: "Home",
   },
   {
@@ -48,11 +51,11 @@ export const navLinks: TNavLink[] = [
     title: "Work",
   },
   {
-    id: "work",
+    id: "skills",
     title: "Skills",
   },
   {
-    id: "contact",
+    id: "project",
     title: "Project",
   },
   {
@@ -82,57 +85,106 @@ const services: TService[] = [
 
 const technologies: TTechnology[] = [
   {
-    name: "HTML 5",
+    title: "HTML",
+    hash: "#html",
     icon: html,
+    color: "#F1662A",
   },
   {
-    name: "CSS 3",
+    title: "CSS",
+    hash: "#CSS",
     icon: css,
+    color: "#1572B6",
   },
   {
-    name: "JavaScript",
+    title: "JavaScript",
+    hash: "#JavaScript",
     icon: javascript,
+    color: "#F7DF1E",
   },
   {
-    name: "TypeScript",
+    title: "TypeScript",
+    hash: "#TypeScript",
     icon: typescript,
+    color: "#007ACC",
   },
   {
-    name: "React JS",
+    title: "React",
+    hash: "#React",
     icon: reactjs,
+    color: "#61DAFB",
   },
   {
-    name: "Redux Toolkit",
+    title: "Redux Toolkit",
+    hash: "#Redux",
     icon: redux,
+    color: "#61DAFB",
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    title: "Next.js",
+    hash: "#Next.js",
+    icon: nextjs,
+    color: "#FFFFFF",
   },
   {
-    name: "Node JS",
+    title: "Node.js",
+    hash: "#Node.js",
     icon: nodejs,
+    color: "#339933",
   },
   {
-    name: "MongoDB",
+    title: "Tailwind",
+    hash: "#Tailwind",
+    icon: tailwind,
+    color: "#38B2AC",
+  },
+  {
+    title: "MongoDB",
+    hash: "#MongoDB",
     icon: mongodb,
+    color: "#449C45",
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    title: "Vue.js",
+    hash: "#Vue.js",
+    icon: vuejs,
+    color: "#4FC08D",
   },
   {
-    name: "git",
+    title: "Express",
+    hash: "#Express",
+    icon: express,
+    color: "#FFFFFF",
+  },
+  {
+    title: "SASS/SCSS",
+    hash: "#SASS/SCSS",
+    icon: sass_scss,
+    color: "#CC6699",
+  },
+
+
+  {
+    title: "git",
+    hash: "#git",
     icon: git,
+    color: "#CC6699",
   },
+
   {
-    name: "figma",
+    title: "figma",
+    hash: "#figma",
     icon: figma,
+    color: "#CC6699",
   },
+
   {
-    name: "docker",
+    title: "docker",
+    hash: "#docker",
     icon: docker,
+    color: "#CC6699",
   },
+
 ];
 
 const experiences: TExperience[] = [
