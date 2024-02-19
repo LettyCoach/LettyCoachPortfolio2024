@@ -1,11 +1,9 @@
-import { motion } from 'framer-motion';
 import { Tooltip as ReactTooltip } from 'react-tooltip';
 
 // import { BallCanvas } from '../canvas';
 import { Skill } from '../atoms/Skill';
 import { SectionWrapper } from '../../hoc';
 import { technologies } from '../../constants';
-import { fadeIn } from '../../utils/motion';
 import { config } from '../../constants/config';
 import { Header } from '../atoms/Header';
 
@@ -13,16 +11,6 @@ const Tech = () => {
   const theme = 'dark';
 
   return (
-    // <>
-    //   <div className="flex flex-row flex-wrap justify-center gap-10">
-    //     {technologies.map(technology => (
-    //       <div className="h-28 w-28" key={technology.title}>
-    //         {/* <BallCanvas icon={technology.icon} /> */}
-    //       </div>
-    //     ))}
-    //   </div>
-    // </>
-
     <>
       <Header useMotion={true} {...config.sections.tech} />
 
