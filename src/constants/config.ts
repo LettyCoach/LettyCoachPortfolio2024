@@ -33,6 +33,7 @@ type TConfig = {
   sections: {
     about: Required<TSection>;
     experience: TSection;
+    tech: TSection;
     feedbacks: TSection;
     works: Required<TSection>;
   };
@@ -77,6 +78,10 @@ export const config: TConfig = {
       p: "What I have done so far",
       h2: "Work Experience.",
     },
+    tech: {
+      p: "Skills",
+      h2: "My TechStack and Skills",
+    },
     feedbacks: {
       p: "What others say",
       h2: "Testimonials.",
@@ -85,10 +90,10 @@ export const config: TConfig = {
       p: "My work",
       h2: "Projects.",
       content: `Following projects showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
-    links to code repositories and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies,
-    and manage projects effectively.`,
+      real-world examples of my work. Each project is briefly described with
+      links to code repositories and live demos in it. It reflects my
+      ability to solve complex problems, work with different technologies,
+      and manage projects effectively.`,
     },
   },
 };
