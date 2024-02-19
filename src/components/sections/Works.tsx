@@ -1,8 +1,6 @@
 import Tilt from 'react-parallax-tilt';
 import { motion } from 'framer-motion';
-import { Github, ExternalLink, Info, Star, Blocks } from 'lucide-react';
-
-import { github } from '../../assets';
+import { Github, ExternalLink} from 'lucide-react';
 import { SectionWrapper } from '../../hoc';
 import { projects } from '../../constants';
 import { fadeIn } from '../../utils/motion';
@@ -16,17 +14,18 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
   description,
   tags,
   image,
+  liveDemoLink,
   sourceCodeLink,
 }) => {
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <Tilt glareEnable tiltEnable tiltMaxAngleX={30} tiltMaxAngleY={30} glareColor="#aaa6c3">
-        <div className="bg-tertiary w-full rounded-2xl p-5 sm:w-[300px]">
-          <div className="relative h-[230px] w-full">
+        <div className="bg-tertiary w-full rounded-2xl p-5 sm:w-[368px]">
+          <div className="relative h-[240px] w-full">
             <img src={image} alt={name} className="h-full w-full rounded-2xl object-cover" />
             <div className="card-img_hover absolute inset-0 m-3 flex justify-between">
               <div
-                onClick={() => window.open(sourceCodeLink, '_blank')}
+                onClick={() => window.open(liveDemoLink, '_blank')}
                 className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
               >
                 <button
@@ -80,7 +79,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 flex flex-wrap gap-6">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

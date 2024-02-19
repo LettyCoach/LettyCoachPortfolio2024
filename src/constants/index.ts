@@ -328,6 +328,7 @@ const projects: TProject[] = [
       },
     ],
     image: carrent,
+    liveDemoLink: "",
     sourceCodeLink: "https://github.com/",
   },
   {
@@ -349,6 +350,7 @@ const projects: TProject[] = [
       },
     ],
     image: jobit,
+    liveDemoLink: "",
     sourceCodeLink: "https://github.com/",
   },
   {
@@ -370,6 +372,7 @@ const projects: TProject[] = [
       },
     ],
     image: tripguide,
+    liveDemoLink: "",
     sourceCodeLink: "https://github.com/",
   },
   {
@@ -391,6 +394,7 @@ const projects: TProject[] = [
       },
     ],
     image: tripguide,
+    liveDemoLink: "",
     sourceCodeLink: "https://github.com/",
   },
   {
@@ -412,6 +416,7 @@ const projects: TProject[] = [
       },
     ],
     image: tripguide,
+    liveDemoLink: "",
     sourceCodeLink: "https://github.com/",
   },
   {
@@ -433,6 +438,7 @@ const projects: TProject[] = [
       },
     ],
     image: tripguide,
+    liveDemoLink: "",
     sourceCodeLink: "https://github.com/",
   },
 ];
