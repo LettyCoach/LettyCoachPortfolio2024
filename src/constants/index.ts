@@ -7,6 +7,7 @@ import type {
   TProject,
   StringKeyValueType,
   SocialSectionType,
+  FooterSectionType
 } from "../types";
 
 import {
@@ -514,4 +515,9 @@ const socialSection: SocialSectionType = {
   ],
 };
 
-export { services, technologies, experiences, testimonials, projects, socialLinks, author, seoData, socialSection };
+const footerSection: FooterSectionType = {
+  title: 'Design & Built by Letty Coach',
+  link: 'https://github.com/LettyCoach/LettyCoachPortfolio2024',
+};
+
+export { services, technologies, experiences, testimonials, projects, socialLinks, author, seoData, socialSection, footerSection };

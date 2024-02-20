@@ -12,6 +12,7 @@ import {
   StarsCanvas,
   Social,
   Email,
+  Footer,
 } from './components';
 import { useEffect } from 'react';
 import { config } from './constants/config';
@@ -39,6 +40,7 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
+        <Footer />
         <Social />
         <Email />
       </div>

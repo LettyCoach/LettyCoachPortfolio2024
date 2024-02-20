@@ -59,6 +59,14 @@ export type SocialLinkType = {
   url: string;
 };
 
+export interface Section {
+  title: string;
+}
+
 export interface SocialSectionType {
   socialLinks: SocialLinkType[];
+}
+
+export interface FooterSectionType extends Section {
+  link: string;
 }

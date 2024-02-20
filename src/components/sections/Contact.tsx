@@ -73,15 +73,6 @@ const Contact = () => {
         className="bg-black-100 flex-[0.75] rounded-2xl p-8"
       >
         <Header useMotion={false} {...config.contact} />
-        <div className="w-full flex flex-row justify-center items-center mt-10 gap-4">
-          <Mail size={32} />
-          <a
-            href="mailTo: takuyafukuda70@gmail.com?Subject=I'd like to have a interview with you."
-            className="underline"
-          >
-            takuyafukuda70@gmail.com
-          </a>
-        </div>
 
         <form
           // @ts-expect-error

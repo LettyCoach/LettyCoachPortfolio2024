@@ -1,13 +1,11 @@
 import { Icon } from '@iconify/react';
-import { Sidebar } from '../../components';
+import { footerSection, socialSection } from '../../constants';
 
-import { socialSection } from '../../constants';
-
-const Social = () => {
+const Footer = () => {
   const { socialLinks } = socialSection;
   return (
-    <Sidebar>
-      <ul>
+    <footer className="max-w-lg mx-auto mb-5 font-mono text-xs text-center">
+      <ul className="flex justify-center gap-3 mb-3 md:hidden">
         {socialLinks.map(({ icon, url }) => (
           <li>
             <a
@@ -20,8 +18,16 @@ const Social = () => {
           </li>
         ))}
       </ul>
-    </Sidebar>
+      <a
+        href={footerSection.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition hover:text-accent"
+      >
+        {footerSection.title}
+      </a>
+    </footer>
   );
 };
 
-export default Social;
+export default Footer;

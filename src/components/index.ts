@@ -17,6 +17,7 @@ import CanvasLoader from "./layout/Loader";
 import Sidebar from "./layout/Sidebar";
 import Social from "./sections/Social";
 import Email from './sections/Email';
+import Footer from './layout/Footer';
 
 export {
   Hero,
@@ -34,5 +35,6 @@ export {
   StarsCanvas,
   Sidebar,
   Social,
-  Email
+  Email,
+  Footer
 };
