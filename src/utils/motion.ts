@@ -44,6 +44,20 @@ export const fadeIn = (
   };
 };
 
+export const fadeIn_ = (delay = 0): Variants => ({
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      type: 'spring',
+      duration: 1.25,
+      delay,
+    },
+  },
+});
+
 export const zoomIn = (
   delay: TMotion["delay"],
   duration: TMotion["duration"]

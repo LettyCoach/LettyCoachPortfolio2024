@@ -5,6 +5,9 @@ import type {
   TExperience,
   TTestimonial,
   TProject,
+  StringKeyValueType,
+  SocialSectionType,
+  FooterSectionType
 } from "../types";
 
 import {
@@ -284,7 +287,7 @@ const experiences: TExperience[] = [
 const testimonials: TTestimonial[] = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      "I thought it was impossible to make a website as beautiful as our product, but Letty proved me wrong.",
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
@@ -292,7 +295,7 @@ const testimonials: TTestimonial[] = [
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "I've never met a web developer who truly cares about their clients' success like Letty does.",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
@@ -300,7 +303,7 @@ const testimonials: TTestimonial[] = [
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "After Letty optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
@@ -328,6 +331,7 @@ const projects: TProject[] = [
       },
     ],
     image: carrent,
+    liveDemoLink: "",
     sourceCodeLink: "https://github.com/",
   },
   {
@@ -349,6 +353,7 @@ const projects: TProject[] = [
       },
     ],
     image: jobit,
+    liveDemoLink: "",
     sourceCodeLink: "https://github.com/",
   },
   {
@@ -370,6 +375,7 @@ const projects: TProject[] = [
       },
     ],
     image: tripguide,
+    liveDemoLink: "",
     sourceCodeLink: "https://github.com/",
   },
   {
@@ -391,6 +397,7 @@ const projects: TProject[] = [
       },
     ],
     image: tripguide,
+    liveDemoLink: "",
     sourceCodeLink: "https://github.com/",
   },
   {
@@ -412,6 +419,7 @@ const projects: TProject[] = [
       },
     ],
     image: tripguide,
+    liveDemoLink: "",
     sourceCodeLink: "https://github.com/",
   },
   {
@@ -433,8 +441,83 @@ const projects: TProject[] = [
       },
     ],
     image: tripguide,
+    liveDemoLink: "",
     sourceCodeLink: "https://github.com/",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const socialLinks: StringKeyValueType = {
+  facebook: 'https://www.facebook.com/LettyCoach',
+  instagram: 'https://www.instagram.com/LettyCoach',
+  twitter: 'https://twitter.com/LettyCoach',
+  github: 'https://github.com/LettyCoach',
+  linkedin: 'https://www.linkedin.com/in/LettyCoach/',
+};
+
+const author = {
+  name: 'Letty Coach',
+  email: 'laneandyumiko@gmail.com',
+};
+
+const seoData = {
+  title: 'Letty Coach | Web & Blockchain Developer',
+  description:
+    'Letty Coach is a front-end developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
+  author: author.name,
+  image:
+    'https://user-images.githubusercontent.com/68834718/217467445-0b0d2d63-f8ad-4702-8474-814eb2cbb3be.png',
+  url: 'https://lettycoach.vercel.app/',
+  keywords: [
+    'Letty',
+    'Letty Coach',
+    '@LettyCoach',
+    'LettyCoach',
+    'Portfolio',
+    'Letty Coach ',
+    'Letty Coach Portfolio',
+  ],
+};
+
+const socialSection: SocialSectionType = {
+  socialLinks: [
+    {
+      icon: 'tabler:brand-github',
+      url: socialLinks.github,
+    },
+    {
+      icon: 'mdi:instagram',
+      url: socialLinks.instagram,
+    },
+    {
+      icon: 'lucide:twitter',
+      url: socialLinks.twitter,
+    },
+    {
+      icon: 'lucide:linkedin',
+      url: socialLinks.linkedin,
+    },
+    {
+      icon: 'lucide:facebook',
+      url: socialLinks.facebook,
+    },
+    {
+      icon: 'mdi:skype',
+      url: socialLinks.facebook,
+    },
+    {
+      icon: 'ic:baseline-discord',
+      url: socialLinks.facebook,
+    },
+    {
+      icon: 'iconoir:telegram',
+      url: socialLinks.facebook,
+    },
+  ],
+};
+
+const footerSection: FooterSectionType = {
+  title: 'Design & Built by Letty Coach',
+  link: 'https://github.com/LettyCoach/LettyCoachPortfolio2024',
+};
+
+export { services, technologies, experiences, testimonials, projects, socialLinks, author, seoData, socialSection, footerSection };

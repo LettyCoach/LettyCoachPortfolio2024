@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom';
 
 import {
   About,
@@ -10,9 +10,12 @@ import {
   Tech,
   Works,
   StarsCanvas,
-} from "./components";
-import { useEffect } from "react";
-import { config } from "./constants/config";
+  Social,
+  Email,
+  Footer,
+} from './components';
+import { useEffect } from 'react';
+import { config } from './constants/config';
 
 const App = () => {
   useEffect(() => {
@@ -37,6 +40,9 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
+        <Footer />
+        <Social />
+        <Email />
       </div>
     </BrowserRouter>
   );

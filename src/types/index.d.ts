@@ -25,6 +25,7 @@ export type TProject = {
     color: string;
   }[];
   image: string;
+  liveDemoLink: string;
   sourceCodeLink: string;
 } & Required<Pick<TCommonProps, "name">>;
 
@@ -47,3 +48,25 @@ export type TMotion = {
   delay: number;
   duration: number;
 };
+
+export type StringKeyValueType = {
+  [link: string]: string;
+};
+
+
+export type SocialLinkType = {
+  icon: string;
+  url: string;
+};
+
+export interface Section {
+  title: string;
+}
+
+export interface SocialSectionType {
+  socialLinks: SocialLinkType[];
+}
+
+export interface FooterSectionType extends Section {
+  link: string;
+}

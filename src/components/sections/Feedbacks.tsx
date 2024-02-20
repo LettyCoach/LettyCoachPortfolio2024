@@ -46,7 +46,7 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
 
 const Feedbacks = () => {
   return (
-    <div className="bg-black-100 mt-12 rounded-[20px]">
+    <div className="bg-black-100 mt-12 rounded-[20px] mx-0 xl:mx-10">
       <div
         className={`${styles.padding} bg-tertiary min-h-[300px] rounded-2xl`}
       >
