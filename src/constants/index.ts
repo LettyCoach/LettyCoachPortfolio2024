@@ -5,6 +5,8 @@ import type {
   TExperience,
   TTestimonial,
   TProject,
+  StringKeyValueType,
+  SocialSectionType,
 } from "../types";
 
 import {
@@ -443,4 +445,73 @@ const projects: TProject[] = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const socialLinks: StringKeyValueType = {
+  facebook: 'https://www.facebook.com/LettyCoach',
+  instagram: 'https://www.instagram.com/LettyCoach',
+  twitter: 'https://twitter.com/LettyCoach',
+  github: 'https://github.com/LettyCoach',
+  linkedin: 'https://www.linkedin.com/in/LettyCoach/',
+};
+
+const author = {
+  name: 'Letty Coach',
+  email: 'laneandyumiko@gmail.com',
+};
+
+const seoData = {
+  title: 'Letty Coach | Web & Blockchain Developer',
+  description:
+    'Letty Coach is a front-end developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
+  author: author.name,
+  image:
+    'https://user-images.githubusercontent.com/68834718/217467445-0b0d2d63-f8ad-4702-8474-814eb2cbb3be.png',
+  url: 'https://lettycoach.vercel.app/',
+  keywords: [
+    'Letty',
+    'Letty Coach',
+    '@LettyCoach',
+    'LettyCoach',
+    'Portfolio',
+    'Letty Coach ',
+    'Letty Coach Portfolio',
+  ],
+};
+
+const socialSection: SocialSectionType = {
+  socialLinks: [
+    {
+      icon: 'tabler:brand-github',
+      url: socialLinks.github,
+    },
+    {
+      icon: 'mdi:instagram',
+      url: socialLinks.instagram,
+    },
+    {
+      icon: 'lucide:twitter',
+      url: socialLinks.twitter,
+    },
+    {
+      icon: 'lucide:linkedin',
+      url: socialLinks.linkedin,
+    },
+    {
+      icon: 'lucide:facebook',
+      url: socialLinks.facebook,
+    },
+    {
+      icon: 'mdi:skype',
+      url: socialLinks.facebook,
+    },
+    {
+      icon: 'ic:baseline-discord',
+      url: socialLinks.facebook,
+    },
+    {
+      icon: 'iconoir:telegram',
+      url: socialLinks.facebook,
+    },
+  ],
+};
+
+export { services, technologies, experiences, testimonials, projects, socialLinks, author, seoData, socialSection };

@@ -14,6 +14,8 @@ import Works from "./sections/Works";
 import Feedbacks from "./sections/Feedbacks";
 import Contact from "./sections/Contact";
 import CanvasLoader from "./layout/Loader";
+import Sidebar from "./layout/Sidebar";
+import Social from "./sections/Social";
 
 export {
   Hero,
@@ -29,4 +31,6 @@ export {
   BallCanvas,
   ComputersCanvas,
   StarsCanvas,
+  Sidebar,
+  Social
 };

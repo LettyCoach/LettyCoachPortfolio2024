@@ -48,3 +48,17 @@ export type TMotion = {
   delay: number;
   duration: number;
 };
+
+export type StringKeyValueType = {
+  [link: string]: string;
+};
+
+
+export type SocialLinkType = {
+  icon: string;
+  url: string;
+};
+
+export interface SocialSectionType {
+  socialLinks: SocialLinkType[];
+}
