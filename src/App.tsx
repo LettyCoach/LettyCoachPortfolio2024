@@ -11,6 +11,7 @@ import {
   Works,
   StarsCanvas,
   Social,
+  Email,
 } from './components';
 import { useEffect } from 'react';
 import { config } from './constants/config';
@@ -39,6 +40,7 @@ const App = () => {
           <StarsCanvas />
         </div>
         <Social />
+        <Email />
       </div>
     </BrowserRouter>
   );

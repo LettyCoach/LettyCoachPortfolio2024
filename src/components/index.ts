@@ -16,6 +16,7 @@ import Contact from "./sections/Contact";
 import CanvasLoader from "./layout/Loader";
 import Sidebar from "./layout/Sidebar";
 import Social from "./sections/Social";
+import Email from './sections/Email';
 
 export {
   Hero,
@@ -32,5 +33,6 @@ export {
   ComputersCanvas,
   StarsCanvas,
   Sidebar,
-  Social
+  Social,
+  Email
 };
