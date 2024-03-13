@@ -22,7 +22,7 @@
 ## 🌐 Live Demo
 
 Explore the live demonstration of the project:
-[LettyCoachPortfolio2024](https://reactjs18-3-d-portfolio.vercel.app/)
+[LettyCoachPortfolio2024](https://lettycoach-portfolio.vercel.app/)
 
 ## 📝 Description
 

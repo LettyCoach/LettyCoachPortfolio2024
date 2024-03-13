@@ -1,4 +1,5 @@
 import React from 'react';
+import { Icon } from '@iconify/react';
 import { TTechnology } from '../../types';
 
 export const Skill: React.FC<{ skill: TTechnology }> = ({ skill }) => {
@@ -25,7 +26,7 @@ export const Skill: React.FC<{ skill: TTechnology }> = ({ skill }) => {
           document.documentElement.style.setProperty('--box-shadow-color', 'inherit');
         }}
       >
-        <img src={skill.icon} alt={`${skill.icon}-icon`} className="h-[8.8rem]" />
+        <Icon icon={skill.icon} className="w-full h-[6.9rem]" />
         <h3 className="max-lg:text-[1.25rem] min-[1024px]:hidden">{skill.title}</h3>
       </div>
     </>
