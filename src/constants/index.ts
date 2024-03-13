@@ -174,6 +174,12 @@ const technologies: TTechnology[] = [
     color: "#8ae99c",
   },
   {
+    title: "Vuefify",
+    hash: "#vuetify",
+    icon: "skill-icons:vuetify-dark",
+    color: "",
+  },
+  {
     title: "Node.js",
     hash: "#nodejs",
     icon: "skill-icons:nodejs-dark",
