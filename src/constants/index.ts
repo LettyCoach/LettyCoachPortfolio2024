@@ -16,9 +16,6 @@ import {
   creator,
   web,
   meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
@@ -90,16 +87,16 @@ const technologies: TTechnology[] = [
     color: "#cd6799",
   },
   {
-    title: "Tailwind",
-    hash: "#tailwind",
-    icon: "skill-icons:tailwindcss-dark",
-    color: "#32b1c1",
-  },
-  {
     title: "Bootstrap",
     hash: "#bootstrap",
     icon: "skill-icons:bootstrap",
     color: "#9013fe",
+  },
+  {
+    title: "Tailwind",
+    hash: "#tailwind",
+    icon: "skill-icons:tailwindcss-dark",
+    color: "#32b1c1",
   },
   {
     title: "JavaScript",
@@ -150,12 +147,6 @@ const technologies: TTechnology[] = [
     color: "#ffffff",
   },
   {
-    title: "Flutter",
-    hash: "#flutter",
-    icon: "skill-icons:flutter-dark",
-    color: "#1fbcfd"
-  },
-  {
     title: "Vue.js",
     hash: "#vuejs",
     icon: "skill-icons:vuejs-dark",
@@ -180,6 +171,18 @@ const technologies: TTechnology[] = [
     color: "",
   },
   {
+    title: "React Native",
+    hash: "#reactnative",
+    icon: "tabler:brand-react-native",
+    color: "#ffffff"
+  },
+  {
+    title: "Flutter",
+    hash: "#flutter",
+    icon: "skill-icons:flutter-dark",
+    color: "#1fbcfd"
+  },
+  {
     title: "Node.js",
     hash: "#nodejs",
     icon: "skill-icons:nodejs-dark",
@@ -202,6 +205,12 @@ const technologies: TTechnology[] = [
     hash: "#laravel",
     icon: "skill-icons:laravel-dark",
     color: "#ff2d20",
+  },
+  {
+    title: "Python",
+    hash: "#python",
+    icon: "skill-icons:python-dark",
+    color: "#ffc331",
   },
   {
     title: "Django",
@@ -366,94 +375,41 @@ const technologies: TTechnology[] = [
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    companyName: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    companyName: "Meta",
+    title: "Fronend Developer",
+    companyName: "Dreher Consulting",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "May 2016 - March 2018",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "React & Next, Vue & Nuxt, Tailwind, Vuetify, Bootstrap, ...",
+      "Built many advertising websites, matching sites and Landing pages.",
+      "Developed and maintained design systems that separates design logic.",
+      "Understanding client needs and proposing effective solutions, which also involves strategising and planning.",
+      
     ],
   },
   {
-    title: "Full stack Developer",
-    companyName: "Meta",
+    title: "Fullstack Developer",
+    companyName: "NEXTs",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "March 2018 - Dec 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "MERN, Laravel + Vue, Django",
+      "From programming in the front-end and back-end fields to server deployment, I was responsible for completed it.",
+      "Integration with various APIs",
+      "Carry out quality assurance tests to discover errors and optimize usability."
     ],
   },
   {
-    title: "Full stack Developer",
-    companyName: "Meta",
+    title: "Bolckchain Developer",
+    companyName: "Launchlabs",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Jan 2022 - Dec 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    companyName: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "React + Web3JS, React + EthersJS",
+      "Implementation of a function that can automatically perform “Farming” on various platforms of 9 chains.(BSC, Solana, Ethereum, TRON, Avalanche, Fantom, CRONOS, CARDANO, Algorand)"
     ],
   },
 ];
