@@ -33,8 +33,14 @@ export type TTechnology = {
   title: string,
   hash: string,
   icon: string,
-  color: string
+  color: string,
+  categories: string[]
 };
+
+export type TTechGroup = {
+  title: string,
+  techs: TTechnology[]
+}
 
 export type TNavLink = {
   id: string;
