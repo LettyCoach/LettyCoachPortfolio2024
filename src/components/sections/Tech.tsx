@@ -9,7 +9,7 @@ import { Header } from '../atoms/Header';
 const Tech = () => {
   const theme = 'dark';
 
-  const stackCategory = import.meta.env
+  const stackCategory = import.meta.env.VITE_STACK_CATEGORY as string;
   console.log(stackCategory);
 
   return (
@@ -18,7 +18,9 @@ const Tech = () => {
 
       <div className="mt-20">
         {technologies.map(techGroup => {
-          return (
+          return techGroup.techs.filter(tech => {
+            return tech.categories.filter(c => c === stackCategory).length > 0;
+          }).length === 0 ? null : (
             <article
               className={`h-auto rounded-2xl p-16 pt-32 mt-8 grid grid-cols-6 gap-8 relative z-10 max-lg:w-full max-lg:grid-cols-3 max-lg:p-4 max-lg:pt-32 ${
                 theme === 'dark'
@@ -35,9 +37,11 @@ const Tech = () => {
                   <span className="text-[--orange]">/&gt;</span>
                 </p>
               </div>
-              {techGroup.techs.map(tech => (
-                <Skill skill={tech} />
-              ))}
+              {techGroup.techs.map(tech =>
+                tech.categories.filter(c => c === stackCategory).length > 0 ? (
+                  <Skill skill={tech} />
+                ) : null
+              )}
             </article>
           );
         })}
