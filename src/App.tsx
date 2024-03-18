@@ -24,6 +24,8 @@ const App = () => {
     }
   }, []);
 
+  const visibleContactInfo = import.meta.env.VITE_VISIBLE_COTACT_INFO;
+
   return (
     <BrowserRouter>
       <div className="bg-primary relative z-0">
@@ -41,8 +43,8 @@ const App = () => {
           <StarsCanvas />
         </div>
         <Footer />
-        <Social />
-        <Email />
+        {visibleContactInfo === 'visible' ? <Social /> : null}
+        {visibleContactInfo === 'visible' ? <Email /> : null}
       </div>
     </BrowserRouter>
   );
