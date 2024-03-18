@@ -600,6 +600,14 @@ const testimonials: TTestimonial[] = [
     company: "456 Enterprises",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
+  {
+    testimonial:
+      "Although there may be things that Letty has never done, nothing is impossible. Letty was sincere in everything.",
+    name: "Takashiide",
+    designation: "CEO",
+    company: "NEXTs Inc",
+    image: "https://randomuser.me/api/portraits/men/26.jpg",
+  },
 ];
 
 const projects: TProject[] = [
