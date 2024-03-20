@@ -50,7 +50,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
           </div>
           <div className="mt-5">
             <h3 className="text-[24px] font-bold text-white">{name}</h3>
-            <p className="text-secondary mt-2 text-[14px]">{description}</p>
+            <p className="text-secondary mt-2 text-[14px] min-h-[130px]">{description}</p>
           </div>
           <div className="mt-4 flex flex-wrap gap-2">
             {tags.map(tag => (
