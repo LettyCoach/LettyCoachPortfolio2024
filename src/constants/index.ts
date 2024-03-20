@@ -13,12 +13,10 @@ import type {
 import {
   mobile,
   backend,
-  creator,
   web,
   meta,
-  carrent,
-  jobit,
-  tripguide,
+  creator,
+  portfolio,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -406,6 +404,13 @@ const technologies: TTechGroup[] = [
         color: "#10aa50",
         categories: ["frontend", "backend", "fullstack", "app", "blockchain"],
       },
+      {
+        title: "SQLite",
+        hash: "#sqlite",
+        icon: "skill-icons:sqlite",
+        color: "#0f80cc",
+        categories: ["frontend", "backend", "fullstack", "app", "blockchain"],
+      },
     ]
   },
   {
@@ -612,136 +617,360 @@ const testimonials: TTestimonial[] = [
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "Portfolio",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "This is a portfolio app created using React, Three.js, etc.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "three.js",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    liveDemoLink: "",
-    sourceCodeLink: "https://github.com/",
+    image: portfolio,
+    liveDemoLink: "https://bookingcomnext14.netlify.app/",
+    sourceCodeLink: "https://github.com/LettyCoach/LettyCoachPortfolio2024",
   },
   {
-    name: "Job IT",
+    name: "Booking.com clone",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A clone of booking.com which is built using Nextjs 14 and Oxylabs webscraping API to scrape data from the official booking.com website and show as results of our queries",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "three.js",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    liveDemoLink: "",
-    sourceCodeLink: "https://github.com/",
+    image: portfolio,
+    liveDemoLink: "https://bookingcomnext14.netlify.app/",
+    sourceCodeLink: "https://github.com/LettyCoach/BookingComClone",
   },
   {
-    name: "Trip Guide",
+    name: "Cyberscourge Hub",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "An open source ultra fast markdown blog app built using Hugo and deployed on Netlify. The theme of this app is 100% custom built by me. The theme is also open source and can be found on my github profile. And I regularly write articles on this blog.",
     tags: [
       {
-        name: "nextjs",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "three.js",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    liveDemoLink: "",
-    sourceCodeLink: "https://github.com/",
+    image: portfolio,
+    liveDemoLink: "https://rtharusha.tech/",
+    sourceCodeLink: "https://github.com/LettyCoach/CyberscourgeHub",
   },
   {
-    name: "Trip Guide",
+    name: "Rainbownote",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A vibrant MERN note app with GitHub login, trash management, and public note sharing. Personalize notes with covers, icons, and enjoy the sleek TinyMCE editor. Powered by Vite React, Appwrite, React-Hook-Form, React-Query, and Tailwind CSS.",
     tags: [
       {
-        name: "nextjs",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "react query",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    liveDemoLink: "",
-    sourceCodeLink: "https://github.com/",
+    image: portfolio,
+    liveDemoLink: "https://rainbownote.vercel.app/",
+    sourceCodeLink: "https://github.com/LettyCoach/Rainbownote",
   },
   {
-    name: "Trip Guide",
+    name: "Tech-Canvas",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A Next.js-powered blog platform for exploring the latest in tech trends, tutorials, and insights. Optimized for SEO and user-friendly experience.",
     tags: [
       {
-        name: "nextjs",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
+        name: "Tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "Next.js",
+        color: "green-text-gradient",
+      },
     ],
-    image: tripguide,
-    liveDemoLink: "",
-    sourceCodeLink: "https://github.com/",
+    image: portfolio,
+    liveDemoLink: "https://tech-canvas.vercel.app/",
+    sourceCodeLink: "https://github.com/LettyCoach/TechCanvas",
   },
   {
-    name: "Trip Guide",
+    name: "Due-Cash",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A powerful React app designed to effortlessly manage due cash for shops or individuals. Simplify your financial tracking and stay organized.",
     tags: [
       {
-        name: "nextjs",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Nodejs",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "MongoDB",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: portfolio,
+    liveDemoLink: "https://due-cash.vercel.app/",
+    sourceCodeLink: "https://github.com/LettyCoach/DueCash",
+  },
+  {
+    name: "iChat",
+    description:
+      "Realtime chat app built with Next.js and Firebase, revolutionizing instant messaging with speed and precision!",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: portfolio,
+    liveDemoLink: "https://ichat-1343.netlify.app/",
+    sourceCodeLink: "https://github.com/LettyCoach/I-Chat",
+  },
+  {
+    name: "Codeswear",
+    description:
+      "Codes-Wear is a free and open source e-commerce website built with Next.js.You can use this project as a template for your own e-commerce website.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Next.js",
+        color: "green-text-gradient",
+      },
+    ],
+    image: portfolio,
+    liveDemoLink: "https://codes-wear2.vercel.app/",
+    sourceCodeLink: "https://github.com/LettyCoach/CodesWear",
+  },
+  {
+    name: "TastyFoods App",
+    description:
+      "A recipe app that we built as a team with React and the MealDB API. I was the front-end developer and programmed features like voice search or print to PDF. The design was created with Figma. The website is responsive and mobile-optimized.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Canvas",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Trello",
+        color: "green-text-gradient",
+      },
+    ],
+    image: portfolio,
+    liveDemoLink: "https://delightful-cheesecake-9b19f0.netlify.app/",
+    sourceCodeLink: "https://github.com/LettyCoach/TastyFoods",
+  },
+  {
+    name: "Beautiful CSS Animations",
+    description:
+      "APP to experience the magic of beautifully crafted animated components, from loaders to text animations and mesmerizing backgrounds",
+    tags: [
+      {
+        name: "CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Sass",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    liveDemoLink: "",
-    sourceCodeLink: "https://github.com/",
+    image: portfolio,
+    liveDemoLink: "https://beautiful-animations-kv.vercel.app/",
+    sourceCodeLink: "https://github.com/LettyCoach/BCAnimation",
+  },
+  {
+    name: "Remotive Jobs",
+    description:
+      "App to find the best remote job, working as a developer, customer support rep, product or sales professional. All jobs are hand curated and allow remote work. Serve the best work from home jobs in popular categories. ",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Sass",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: portfolio,
+    liveDemoLink: "https://remotive-jobs.vercel.app/",
+    sourceCodeLink: "https://github.com/vatsalsinghkv/remotive-jobs/",
+  },
+  {
+    name: "Movie Metro",
+    description:
+      "A single-page application that allows users to search for any movie or show's ratings and its details.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: portfolio,
+    liveDemoLink: "https://movie-metro.netlify.app/",
+    sourceCodeLink: "https://github.com/shaqdeff/Movie-Metro/",
+  },
+  {
+    name: "codewars",
+    description:
+      "Just a couple of solutions for www.codewars.com problems. I'm currently ranked 7 kyu.",
+    tags: [
+      {
+        name: "C++",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Rust",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Neovim",
+        color: "green-text-gradient",
+      },
+    ],
+    image: portfolio,
+    liveDemoLink: "https://www.codewars.com/",
+    sourceCodeLink: "https://github.com/nuIIpointerexception/codewars/",
+  },
+  {
+    name: "Delta Radar",
+    description:
+      "Web featuring the best potential trades of a Defi trading bot. Delta Radar is a frontend app which shows potential profitable arbitrage trades accross different token pools in Decentralized Exchanges (DEX)",
+    tags: [
+      {
+        name: "Solidity",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Trading Bots",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Swaps",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Truffle",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: portfolio,
+    liveDemoLink: "https://delta-radar.herokuapp.com/",
+    sourceCodeLink: "https://github.com/EstDavid/delta-radar/",
+  },
+  {
+    name: "Dolphinance",
+    description:
+      "Dolphinance is an exchange Dapp based on the capstone project from the Dapp University Blockchain Developer Bootcamp. The dapp allows buying and selling the native token of the exchange, deposits and withdrawals, placing limit orders and tracking token price",
+    tags: [
+      {
+        name: "Solidity",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ethers",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Truffle",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Ganache",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: portfolio,
+    liveDemoLink: "https://dlp-token-exchange.herokuapp.com/",
+    sourceCodeLink: "https://github.com/EstDavid/DappExchange/",
+  },
+  {
+    name: "UniCharts",
+    description:
+      "Charting app that reads price data from Uniswap V3 pools. It features easy search of coin pairs, visualization of charts in different timeframes and use of exponential and simple moving averages (EMA and SMA)",
+    tags: [
+      {
+        name: "Uniswap V3",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ethers",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: portfolio,
+    liveDemoLink: "https://dlp-token-exchange.herokuapp.com/",
+    sourceCodeLink: "https://github.com/EstDavid/DappExchange/",
   },
 ];
 
