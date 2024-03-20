@@ -856,7 +856,7 @@ const projects: TProject[] = [
     ],
     image: portfolio,
     liveDemoLink: "https://remotive-jobs.vercel.app/",
-    sourceCodeLink: "https://github.com/vatsalsinghkv/remotive-jobs/",
+    sourceCodeLink: "https://github.com/LettyCoach/RJobs",
   },
   {
     name: "Movie Metro",
@@ -870,108 +870,248 @@ const projects: TProject[] = [
     ],
     image: portfolio,
     liveDemoLink: "https://movie-metro.netlify.app/",
-    sourceCodeLink: "https://github.com/shaqdeff/Movie-Metro/",
+    sourceCodeLink: "https://github.com/LettyCoach/MMetro",
   },
   {
-    name: "codewars",
+    name: "SuperLesson",
     description:
-      "Just a couple of solutions for www.codewars.com problems. I'm currently ranked 7 kyu.",
+      "SuperLesson",
     tags: [
-      {
-        name: "C++",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Rust",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Neovim",
-        color: "green-text-gradient",
-      },
-    ],
-    image: portfolio,
-    liveDemoLink: "https://www.codewars.com/",
-    sourceCodeLink: "https://github.com/nuIIpointerexception/codewars/",
-  },
-  {
-    name: "Delta Radar",
-    description:
-      "Web featuring the best potential trades of a Defi trading bot. Delta Radar is a frontend app which shows potential profitable arbitrage trades accross different token pools in Decentralized Exchanges (DEX)",
-    tags: [
-      {
-        name: "Solidity",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Trading Bots",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Swaps",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Truffle",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: portfolio,
-    liveDemoLink: "https://delta-radar.herokuapp.com/",
-    sourceCodeLink: "https://github.com/EstDavid/delta-radar/",
-  },
-  {
-    name: "Dolphinance",
-    description:
-      "Dolphinance is an exchange Dapp based on the capstone project from the Dapp University Blockchain Developer Bootcamp. The dapp allows buying and selling the native token of the exchange, deposits and withdrawals, placing limit orders and tracking token price",
-    tags: [
-      {
-        name: "Solidity",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "ethers",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Truffle",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Ganache",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: portfolio,
-    liveDemoLink: "https://dlp-token-exchange.herokuapp.com/",
-    sourceCodeLink: "https://github.com/EstDavid/DappExchange/",
-  },
-  {
-    name: "UniCharts",
-    description:
-      "Charting app that reads price data from Uniswap V3 pools. It features easy search of coin pairs, visualization of charts in different timeframes and use of exponential and simple moving averages (EMA and SMA)",
-    tags: [
-      {
-        name: "Uniswap V3",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "ethers",
-        color: "pink-text-gradient",
-      },
       {
         name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ChatGPT API",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Redux-Saga",
+        color: "green-text-gradient",
+      },
+    ],
+    image: portfolio,
+    liveDemoLink: "https://superlesson.net/",
+    sourceCodeLink: "https://github.com/LettyCoach/chatgpt-japanese",
+  },
+  {
+    name: "Keyjobs",
+    description:
+      "Keyjobs",
+    tags: [
+      {
+        name: "Nuxt",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Vuex",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Nuxt/Sitemap",
         color: "green-text-gradient",
       },
       {
-        name: "MongoDB",
+        name: "Tailwind",
         color: "orange-text-gradient",
       },
     ],
     image: portfolio,
-    liveDemoLink: "https://dlp-token-exchange.herokuapp.com/",
-    sourceCodeLink: "https://github.com/EstDavid/DappExchange/",
+    liveDemoLink: "https://keyplayers.jp/keyjobs/",
+    sourceCodeLink: "https://github.com/LettyCoach/Keyjobs",
   },
+  {
+    name: "Actarea",
+    description:
+      "Actarea",
+    tags: [
+      {
+        name: "Nuxt",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Pinia",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "dnd",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: portfolio,
+    liveDemoLink: "https://actarea.org/signin",
+    sourceCodeLink: "https://github.com/LettyCoach/Actarea",
+  },
+  {
+    name: "BeefSaleSystemOne",
+    description:
+      "BeefSaleSystemOne",
+    tags: [
+      {
+        name: "Laravel",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: portfolio,
+    liveDemoLink: "https://sdgs.japanmobile.co.jp/",
+    sourceCodeLink: "https://github.com/LettyCoach/BeefSaleSystemOne",
+  },
+  {
+    name: "SilksCarp",
+    description:
+      "SilksCarp",
+    tags: [
+      {
+        name: "Laravel",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Square Payment Api",
+        color: "green-text-gradient",
+      },
+    ],
+    image: portfolio,
+    liveDemoLink: "https://nishikigoi.club/",
+    sourceCodeLink: "https://github.com/LettyCoach/SilksCarp",
+  },
+  {
+    name: "Leadspaid",
+    description:
+      "Leadspaid",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "dnd",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Stripe",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: portfolio,
+    liveDemoLink: "https://leadspaid.com/",
+    sourceCodeLink: "https://github.com/LettyCoach/Leadspaid",
+  },
+  // {
+  //   name: "ConVineFarming",
+  //   description:
+  //     "ConVineFarming",
+  //   tags: [
+  //     {
+  //       name: "Uniswap V3",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "Radium",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "PancakeSwap",
+  //       color: "green-text-gradient",
+  //     },
+  //   ],
+  //   image: portfolio,
+  //   liveDemoLink: "/",
+  //   sourceCodeLink: "https://github.com/LettyCoach/ConVine-Farming_New",
+  // },
+  // {
+  //   name: "Delta Radar",
+  //   description:
+  //     "Web featuring the best potential trades of a Defi trading bot. Delta Radar is a frontend app which shows potential profitable arbitrage trades accross different token pools in Decentralized Exchanges (DEX)",
+  //   tags: [
+  //     {
+  //       name: "Solidity",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "Trading Bots",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "Swaps",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "Truffle",
+  //       color: "orange-text-gradient",
+  //     },
+  //   ],
+  //   image: portfolio,
+  //   liveDemoLink: "https://delta-radar.herokuapp.com/",
+  //   sourceCodeLink: "https://github.com/LettyCoach/DeltaRadar",
+  // },
+  // {
+  //   name: "Dolphinance",
+  //   description:
+  //     "Dolphinance is an exchange Dapp based on the capstone project from the Dapp University Blockchain Developer Bootcamp. The dapp allows buying and selling the native token of the exchange, deposits and withdrawals, placing limit orders and tracking token price",
+  //   tags: [
+  //     {
+  //       name: "Solidity",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "ethers",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "Truffle",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "Ganache",
+  //       color: "orange-text-gradient",
+  //     },
+  //   ],
+  //   image: portfolio,
+  //   liveDemoLink: "https://dlp-token-exchange.herokuapp.com/",
+  //   sourceCodeLink: "https://github.com/LettyCoach/DappExchange",
+  // },
+  // {
+  //   name: "UniCharts",
+  //   description:
+  //     "Charting app that reads price data from Uniswap V3 pools. It features easy search of coin pairs, visualization of charts in different timeframes and use of exponential and simple moving averages (EMA and SMA)",
+  //   tags: [
+  //     {
+  //       name: "Uniswap V3",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "ethers",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "React",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "MongoDB",
+  //       color: "orange-text-gradient",
+  //     },
+  //   ],
+  //   image: portfolio,
+  //   liveDemoLink: "https://dlp-token-exchange.herokuapp.com/",
+  //   sourceCodeLink: "https://github.com/LettyCoach/UChart-Frontend",
+  // },
 ];
 
 const socialLinks: StringKeyValueType = {
